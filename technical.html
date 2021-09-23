@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Andersen</title>
+</head>
+<body>
+<script>
+    'use strict';
+    function hello() {
+        let number = prompt('Введите число','');
+        if (number > 7) {
+            alert("Привет");
+        }
+    }
+
+    function helloViacheslav () {
+        let login = prompt('Введите имя','');
+        if(login === 'Вячеслав') {
+            alert('Привет, Вячеслав');
+        } else {
+            alert('Нет такого имени');
+        }
+    }
+
+    function elementsMultipleOfThree (arr) {
+        for(let i = 0;i<arr.length;i++){
+            if(arr[i] !=0) {
+                if(arr[i]%3 === 0) {
+                    console.log(arr[i]);
+                }
+            }
+        }
+    }
+
+    //hello();
+    //helloViacheslav();
+    //elementsMultipleOfThree([0,1,2,3,4,5,6,7,8,9,10,11,12,15]);
+</script>
+</body>
+</html>
